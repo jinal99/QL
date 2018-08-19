@@ -57,7 +57,7 @@ req = {
     }
   ],
   "urls": [
-    "https://pizzaonline.dominos.co.in/faq"
+    "https://winteriscoming.net/faq/"
   ],
   "files": []
 }
@@ -91,7 +91,6 @@ while False == done:
 ########################################### test QnA maker ###########################################
 
 
-host = "https://my-qna.azurewebsites.net/qnamaker"
 
 # NOTE: Replace this with a valid endpoint key.
 # This is not your subscription key.
