@@ -33,18 +33,6 @@ for e in entities:
     print(e+"    "+str(response.code))
 
 
-####################################################################################################
-#    try:
-#    conn = http.client.HTTPSConnection('westus.api.cognitive.microsoft.com')
-#    conn.request("POST", "/luis/v1.0/prog/apps/bac225d4-73f5-4485-993d-08a9db2b7b63/compositeentities?%s" % params, "{body}", headers)
-#    response = conn.getresponse()
-#    data = response.read()
-#    print(data)
-#    conn.close()
-#except Exception as e:
-#    print("[Errno {0}] {1}".format(e.errno, e.strerror))
-
-####################################
 entities = data[data['Entities'].notnull()]['Entities']
 utterances = data[data['Utterances'].notnull()]['Utterances'] 
 data = pd.read_excel(r"C:\Users\jinal.hitesh.thakkar\OneDrive - Accenture\LUIS Data1.xlsx")
